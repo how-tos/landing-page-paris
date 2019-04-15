@@ -2,9 +2,7 @@
 
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-
-    
+    margin-top: 20px;   
         
 
     .intro-header {
@@ -22,17 +20,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 20px;
+        
         width: 48.5%;   
 
         @media @phone {
             width: 90%;
             margin: 0 auto;
             padding-bottom: 20px;
-        }
-
-        
-        
+        }    
     }
 
     img {        
@@ -45,9 +40,7 @@
         }
     }
 
-    p {
-        
-        
+    p {   
         padding: 20px 0;
     }   
 
@@ -70,6 +63,8 @@
 
 .features-content {
 
+    margin-top: 10px;
+
     .features-header {
         display: flex;
 
@@ -91,11 +86,15 @@
 
         .feature {
             width: 48.5%;
-            padding: 10px 10px 10px 0;;
+            padding: 20px 0;
             display: flex;
+            align-items: flex-end;
 
             img {
-                padding: 20px 0;
+                
+                height: 128px;
+                width: 128px;
+                padding: 10px 0;
             }
 
             p {
@@ -113,7 +112,7 @@
                 }
                 
                 img {
-                    width: 50%;
+                    
                     margin: 0 auto;
                 }
             }
