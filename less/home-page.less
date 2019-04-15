@@ -2,12 +2,18 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    
 
     .intro {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 20px;
+
+        div {
+            width: 48.5%;
+        }
+
     }
 
     h1 {
@@ -23,6 +29,7 @@
 
     img {
         padding-left: 20px;
+    
     }
 
     button {
@@ -30,4 +37,39 @@
         .custom-btn(200px, white, @korokimo);
         border: 2px solid @korokimo;
     }
+}
+
+.features-content {
+
+    h2 {
+        margin: 20px 0;
+    }
+    
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0;
+       
+
+        .feature {
+            width: 48.5%;
+            padding: 10px 10px 10px 0;;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            display: flex;
+
+            img {
+                padding: 20px 0;
+            }
+
+            p {
+                padding: 20px 0 0 20px;
+            }
+        }
+    }
+
+    
+    
+    
 }

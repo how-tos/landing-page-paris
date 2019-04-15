@@ -150,7 +150,7 @@ h1 {
   font-size: 3.6rem;
 }
 h2 {
-  font-size: 3.2 rem;
+  font-size: 3.2rem;
 }
 h3 {
   font-size: 2.8rem;
@@ -186,6 +186,9 @@ h3 {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.intro-content .intro div {
+  width: 48.5%;
+}
 .intro-content h1 {
   margin-bottom: 20px;
 }
@@ -212,4 +215,26 @@ h3 {
   background-color: #FFAE66;
   color: white;
   border: 1px solid white;
+}
+.features-content h2 {
+  margin: 20px 0;
+}
+.features-content .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.features-content .features .feature {
+  width: 48.5%;
+  padding: 10px 10px 10px 0;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  display: flex;
+}
+.features-content .features .feature img {
+  padding: 20px 0;
+}
+.features-content .features .feature p {
+  padding: 20px 0 0 20px;
 }
