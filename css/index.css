@@ -182,6 +182,16 @@ p {
   text-decoration: none;
   color: #FFAE66;
 }
+@media (max-width: 500px) {
+  .title-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-nav h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
 .intro-content {
   display: flex;
   justify-content: space-between;
