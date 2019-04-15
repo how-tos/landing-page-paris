@@ -175,3 +175,41 @@ h3 {
   text-decoration: none;
   color: #FFAE66;
 }
+.intro-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.intro-content .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.intro-content h1 {
+  margin-bottom: 20px;
+}
+.intro-content p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding: 20px 20px 30px 0;
+}
+.intro-content img {
+  padding-left: 20px;
+}
+.intro-content button {
+  width: 200px;
+  background-color: white;
+  color: #FFAE66;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 1.8rem;
+  font-family: 'Roboto Slab', serif;
+  border: 2px solid #FFAE66;
+}
+.intro-content button:hover {
+  background-color: #FFAE66;
+  color: white;
+  border: 1px solid white;
+}
