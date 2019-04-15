@@ -158,6 +158,10 @@ h3 {
 h4 {
   font-size: 2.2rem;
 }
+p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
 .main-container {
   max-width: 1280px;
   width: 100%;
@@ -196,8 +200,6 @@ h4 {
   border-bottom: 2px solid #666CFF;
 }
 .intro-content p {
-  font-size: 1.8rem;
-  line-height: 1.5;
   padding: 20px 0;
 }
 .intro-content img {
@@ -234,8 +236,6 @@ h4 {
 .features-content .features .feature {
   width: 48.5%;
   padding: 10px 10px 10px 0;
-  font-size: 1.8rem;
-  line-height: 1.5;
   display: flex;
 }
 .features-content .features .feature img {
@@ -269,8 +269,6 @@ h4 {
   margin: 20px 0;
 }
 .examples-content .examples .example p {
-  font-size: 1.8rem;
-  line-height: 1.5;
   padding-bottom: 20px;
 }
 .examples-content .examples button {
@@ -288,4 +286,9 @@ h4 {
   background-color: #FFAE66;
   color: white;
   border: 1px solid white;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
