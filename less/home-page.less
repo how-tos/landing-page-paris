@@ -24,26 +24,47 @@
         justify-content: space-between;
         margin-bottom: 20px;
         width: 48.5%;   
+
+        @media @phone {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+
         
+        
+    }
+
+    img {        
+        border-radius: 10px;    
+        width: 100%;
+        
+        @media @phone {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 
     p {
         
         
         padding: 20px 0;
-    }
-
-    img {        
-        border-radius: 10px;    
-        width: 100%;
-    }
-
-    
+    }   
 
     button {
         
         .custom-btn(200px, white, @korokimo);
         border: 2px solid @korokimo;
+
+       @media @phone {
+        height: 75px;
+        font-size: 2.8rem;
+       }
+    }
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -80,10 +101,32 @@
             p {
                 padding: 20px 0 0 20px;
             }
-        }
-    }
+            @media @phone {
+                width: 90%;
+                margin: 0 auto;
+            }
 
-     
+            @media @phone {
+                flex-direction: column;
+
+                p {
+                    padding: 20px 0;
+                }
+                
+                img {
+                    height: 100%;
+                    width: relative;
+                }
+            }
+        }
+        
+    }
+    
+    @media @phone {
+        width: 90%;
+        margin: 0 auto;
+
+    } 
     
     
 }
@@ -117,10 +160,10 @@
                 width: 100%;
             }
 
-            h3 {
+            h2 {
                 margin: 20px 0 10px 0;
                 padding-bottom: 20px;
-                border-bottom: 2px solid @main-border-color;
+                border-bottom: 2px solid @main-border-color;                
             }
             h4 {
                 margin: 20px 0;
@@ -130,11 +173,51 @@
                 padding-bottom: 20px;
             }
             
+            @media @phone {
+                width: 90%;
+                margin: 0 auto;
+
+                h2 {
+                    margin-left: 20px; 
+                }
+            }
+            
+            
+        }
+
+        @media @phone {
+
+            display: flex;
+            flex-direction: column;
+            .example:nth-child(3){
+                display: none;
+            }
+
+            .example:nth-child(4){
+                display: none;
+            }
+
+            .example:nth-child(5){
+                display: none;
+            }
+
+            .example:nth-child(6){
+                display: none;
+            }
+
+            .example:nth-child(7){
+                display: none;
+            }
         }
         button {
         
             .custom-btn(100px, white, @korokimo);
             border: 2px solid @korokimo;
+
+            @media @phone {
+                height: 75px;
+                font-size: 2.8rem;
+            }
         }
 
 

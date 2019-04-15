@@ -212,12 +212,25 @@ p {
   margin-bottom: 20px;
   width: 48.5%;
 }
-.intro-content p {
-  padding: 20px 0;
+@media (max-width: 500px) {
+  .intro-content .intro {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
 }
 .intro-content img {
   border-radius: 10px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .intro-content img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.intro-content p {
+  padding: 20px 0;
 }
 .intro-content button {
   width: 200px;
@@ -234,6 +247,18 @@ p {
   background-color: #FFAE66;
   color: white;
   border: 1px solid white;
+}
+@media (max-width: 500px) {
+  .intro-content button {
+    height: 75px;
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .features-content .features-header {
   display: flex;
@@ -260,6 +285,30 @@ p {
 .features-content .features .feature p {
   padding: 20px 0 0 20px;
 }
+@media (max-width: 500px) {
+  .features-content .features .feature {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .features-content .features .feature {
+    flex-direction: column;
+  }
+  .features-content .features .feature p {
+    padding: 20px 0;
+  }
+  .features-content .features .feature img {
+    height: 100%;
+    width: relative;
+  }
+}
+@media (max-width: 500px) {
+  .features-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .examples-content .examples-header {
   display: flex;
 }
@@ -281,7 +330,7 @@ p {
   border-radius: 10px;
   width: 100%;
 }
-.examples-content .examples .example h3 {
+.examples-content .examples .example h2 {
   margin: 20px 0 10px 0;
   padding-bottom: 20px;
   border-bottom: 2px solid #666CFF;
@@ -291,6 +340,36 @@ p {
 }
 .examples-content .examples .example p {
   padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .examples-content .examples .example {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .examples-content .examples .example h2 {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .examples-content .examples {
+    display: flex;
+    flex-direction: column;
+  }
+  .examples-content .examples .example:nth-child(3) {
+    display: none;
+  }
+  .examples-content .examples .example:nth-child(4) {
+    display: none;
+  }
+  .examples-content .examples .example:nth-child(5) {
+    display: none;
+  }
+  .examples-content .examples .example:nth-child(6) {
+    display: none;
+  }
+  .examples-content .examples .example:nth-child(7) {
+    display: none;
+  }
 }
 .examples-content .examples button {
   width: 100px;
@@ -307,6 +386,12 @@ p {
   background-color: #FFAE66;
   color: white;
   border: 1px solid white;
+}
+@media (max-width: 500px) {
+  .examples-content .examples button {
+    height: 75px;
+    font-size: 2.8rem;
+  }
 }
 footer {
   display: flex;
