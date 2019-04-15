@@ -187,17 +187,20 @@ p {
   justify-content: space-between;
   margin-top: 20px;
 }
+.intro-content .intro-header {
+  display: flex;
+}
+.intro-content .intro-header h1 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #666CFF;
+}
 .intro-content .intro {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
   width: 48.5%;
-}
-.intro-content h1 {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #666CFF;
 }
 .intro-content p {
   padding: 20px 0;
@@ -222,10 +225,13 @@ p {
   color: white;
   border: 1px solid white;
 }
-.features-content h2 {
+.features-content .features-header {
+  display: flex;
+}
+.features-content .features-header h2 {
   margin: 20px 0 10px 0;
   padding-bottom: 10px;
-  border-bottom: 2px solid #666CFF;
+  border-bottom: 4px solid #666CFF;
 }
 .features-content .features {
   display: flex;
@@ -244,8 +250,13 @@ p {
 .features-content .features .feature p {
   padding: 20px 0 0 20px;
 }
-.examples-content h2 {
-  margin-bottom: 20px;
+.examples-content .examples-header {
+  display: flex;
+}
+.examples-content .examples-header h2 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #666CFF;
 }
 .examples-content .examples {
   display: flex;
