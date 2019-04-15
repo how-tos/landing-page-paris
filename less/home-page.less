@@ -88,10 +88,11 @@
         justify-content: space-between;
         flex-wrap: wrap;
         
+        
 
         .example {
             width: 48.5%;
-            padding-top: 10px;
+            padding: 20px 0;
             
             img {
                 border-radius: 10px;
@@ -106,13 +107,18 @@
             h4 {
                 margin: 20px 0;
             }
-            
+
             p {
                 font-size: 1.8rem;
                 line-height: 1.5;
-                padding-bottom: 10px;
+                padding-bottom: 20px;
             }
             
+        }
+        button {
+        
+            .custom-btn(100px, white, @korokimo);
+            border: 2px solid @korokimo;
         }
 
 
