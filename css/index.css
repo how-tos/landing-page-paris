@@ -155,6 +155,9 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2.2rem;
+}
 .main-container {
   max-width: 1280px;
   width: 100%;
@@ -185,20 +188,21 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
-}
-.intro-content .intro div {
   width: 48.5%;
 }
 .intro-content h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #666CFF;
 }
 .intro-content p {
   font-size: 1.8rem;
   line-height: 1.5;
-  padding: 20px 20px 30px 0;
+  padding: 20px 0;
 }
 .intro-content img {
-  padding-left: 20px;
+  border-radius: 10px;
+  width: 100%;
 }
 .intro-content button {
   width: 200px;
@@ -217,7 +221,9 @@ h3 {
   border: 1px solid white;
 }
 .features-content h2 {
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #666CFF;
 }
 .features-content .features {
   display: flex;
@@ -237,4 +243,33 @@ h3 {
 }
 .features-content .features .feature p {
   padding: 20px 0 0 20px;
+}
+.examples-content h2 {
+  margin-bottom: 20px;
+}
+.examples-content .examples {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.examples-content .examples .example {
+  width: 48.5%;
+  padding-top: 10px;
+}
+.examples-content .examples .example img {
+  border-radius: 10px;
+  width: 100%;
+}
+.examples-content .examples .example h3 {
+  margin: 20px 0 10px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #666CFF;
+}
+.examples-content .examples .example h4 {
+  margin: 20px 0;
+}
+.examples-content .examples .example p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
 }
