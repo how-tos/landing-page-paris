@@ -188,6 +188,10 @@ p {
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
+.menu a {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width: 500px) {
   .menu {
     width: 100%;
@@ -444,6 +448,126 @@ p {
 }
 @media (max-width: 500px) {
   .examples-content .examples button {
+    width: 100%;
+    height: 55px;
+    font-size: 2.4rem;
+  }
+}
+.about-intro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.about-intro .about-intro-header {
+  display: flex;
+}
+.about-intro .about-intro-header h1 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #666CFF;
+}
+.about-intro .a-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48.7%;
+}
+@media (max-width: 500px) {
+  .about-intro .a-intro {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+.about-intro .about-img {
+  width: 48.7%;
+}
+.about-intro .about-img img {
+  border-radius: 10px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .about-intro .about-img {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+.about-intro p {
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  .about-intro {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.about-content .about-header {
+  display: flex;
+}
+.about-content .about-header h1 {
+  margin: 20px 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #666CFF;
+}
+@media (max-width: 500px) {
+  .about-content .about-header h1 {
+    margin-left: 20px;
+  }
+}
+.about-content .about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-content .about .person {
+  width: 48.5%;
+  padding: 20px 0;
+}
+.about-content .about .person img {
+  border-radius: 10px;
+  width: 100%;
+}
+.about-content .about .person h2 {
+  margin: 20px 0 10px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #666CFF;
+}
+.about-content .about .person h3 {
+  margin: 20px 0;
+}
+.about-content .about .person p {
+  padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .about-content .about .person {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.about-content .about button {
+  width: 100px;
+  background-color: white;
+  color: #666CFF;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 1.8rem;
+  font-family: 'Roboto Slab', serif;
+  border: 2px solid #666CFF;
+}
+.about-content .about button:hover {
+  background-color: #666CFF;
+  color: white;
+  border: 1px solid white;
+}
+@media (max-width: 500px) {
+  .about-content .about button {
     width: 100%;
     height: 55px;
     font-size: 2.4rem;
