@@ -13,20 +13,22 @@
         <script src = "js/menu.js" async></script>
     </head>
     <body>
+            <div class = "sidebar">
+                    <span onclick="openNav()"><img class = "menu-button" src = "imgs/menu-orange.png"/></span>
+                </div>
+                <div id = "mySidenav" class = "sidenav">
+                    <ul>
+                        <a href = "javascript:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "#">Log In</a></li>
+                        <li><a href = "#">Register</a></li>
+                        <li><a href = "about.html">About Us</a></li>
+                        <li><a href = "#">Contact</a></li>
+                    </ul>                
+                </div>
         <div class = "main-container">
-            <div class="sidebar">
-                <img class = "menu-button" src = "imgs/menu-orange.png"/>
-            </div>
-            <div class = "menu">
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li>Log In</li>
-                    <li>Register</li>
-                    <li><a href = "about.html">About Us</a></li>
-                    <li>Contact</li>
-                </ul>                
-            </div>
-            <div class="main-body">
+            
+            <div id = "main"class="main-body">
                 <header>
                     <div class = "title-nav">
                         
