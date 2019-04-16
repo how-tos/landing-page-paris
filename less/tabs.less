@@ -6,9 +6,8 @@
     height: 5rem;
     margin-top: 20px;
     background-color: white;
-    @media(min-width: 1280px){
-      width: 1280px;
-    }
+    font-family: @open-sans;
+    
     .topics {
       display: flex;
       justify-content: center;
@@ -17,25 +16,28 @@
         font-size: 1.8rem;
         letter-spacing: 1px;
         font-weight: bold;
+        
       }
       .tab {
-        .flex(none, center);
+        display: flex;
+        align-items: center;
         color: @flower-blue;
         background-color: white;
         margin: 0 5px;
         padding: 2px 10px;
-        font-size: 12px;
+        font-size: 1.8rem;
         letter-spacing: 2px;
         cursor: pointer;
         font-weight: bold;
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
         }
       }
       .active-tab {
         background-color: white;
         color: @flower-blue;
         border: 2px solid @flower-blue;
+        border-radius: 20px;
       }
     }
   }
