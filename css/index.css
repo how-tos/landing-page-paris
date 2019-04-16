@@ -337,10 +337,9 @@ p {
   display: flex;
   align-items: flex-end;
 }
-.features-content .features .feature img {
-  height: 128px;
-  width: 128px;
-  padding: 10px 0;
+.features-content .features .feature i {
+  color: #FFAE66;
+  font-size: 11rem;
 }
 .features-content .features .feature p {
   padding: 20px 0 0 20px;
@@ -355,6 +354,9 @@ p {
     padding: 20px 0;
   }
   .features-content .features .feature img {
+    margin: 0 auto;
+  }
+  .features-content .features .feature i {
     margin: 0 auto;
   }
 }
