@@ -320,6 +320,11 @@ p {
   padding-bottom: 10px;
   border-bottom: 4px solid #666CFF;
 }
+@media (max-width: 500px) {
+  .features-content .features-header h2 {
+    margin-left: 20px;
+  }
+}
 .features-content .features {
   display: flex;
   flex-wrap: wrap;
@@ -350,12 +355,6 @@ p {
     padding: 20px 0;
   }
   .features-content .features .feature img {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 500px) {
-  .features-content {
-    width: 90%;
     margin: 0 auto;
   }
 }
