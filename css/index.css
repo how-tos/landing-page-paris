@@ -180,7 +180,6 @@ p {
   left: 0;
   width: 15%;
   height: 100vh;
-  /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #FFAE66;
   color: white;
   border: 1px solid white;
@@ -189,6 +188,11 @@ p {
   border-radius: 10px;
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+@media (max-width: 500px) {
+  .menu {
+    width: 100%;
+  }
 }
 .menu ul li {
   list-style-type: none;
@@ -203,26 +207,30 @@ p {
 .title-nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 60px 0 20px 0;
 }
 .title-nav .icons {
   display: flex;
   justify-content: space-around;
 }
 .title-nav .icons a {
-  padding: 0 10px 0;
+  padding: 0 5px 0;
   font-size: 1.8rem;
   text-decoration: none;
   color: #FFAE66;
 }
+.title-nav .icons .label {
+  display: none;
+}
 @media (max-width: 500px) {
   .title-nav {
     display: flex;
-    flex-direction: column;
   }
-  .title-nav h1 {
-    text-align: center;
-    padding-bottom: 20px;
+  .title-nav h4 {
+    margin-left: 5%;
+  }
+  .title-nav .icons {
+    margin-right: 5%;
   }
 }
 .intro-content {

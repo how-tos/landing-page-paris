@@ -10,7 +10,7 @@
     top: 75px;
     left: 0;
     width: 15%;
-    height: 100vh; /* This give the height 100% of the screen or, '100% of View Height' */
+    height: 100vh; 
     background-color: @sidebar-bg;
     color: @sidebar-font;
     border: 1px solid @sidebar-font;
@@ -18,6 +18,10 @@
     border-bottom: none;
     border-radius: 10px;
     z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+
+    @media @phone {
+        width: 100%;
+    }
   }
   
   .menu ul li{
