@@ -176,7 +176,7 @@ p {
 .menu {
   display: none;
   position: fixed;
-  top: 75px;
+  top: 50px;
   left: 0;
   width: 15%;
   height: 100vh;
@@ -185,7 +185,6 @@ p {
   border: 1px solid white;
   border-left: none;
   border-bottom: none;
-  border-radius: 10px;
   z-index: 2;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
@@ -227,10 +226,10 @@ p {
     display: flex;
   }
   .title-nav h4 {
-    margin-left: 5%;
+    margin-left: 25px;
   }
   .title-nav .icons {
-    margin-right: 5%;
+    margin-right: 20px;
   }
 }
 .intro-content {
