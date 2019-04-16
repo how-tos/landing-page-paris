@@ -165,7 +165,7 @@ p {
 }
 .main-container {
   max-width: 1280px;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 }
 .menu-button {
@@ -283,16 +283,16 @@ p {
 .intro-content button {
   width: 200px;
   background-color: white;
-  color: #FFAE66;
+  color: #666CFF;
   cursor: pointer;
   border-radius: 5px;
   height: 40px;
   font-size: 1.8rem;
   font-family: 'Roboto Slab', serif;
-  border: 2px solid #FFAE66;
+  border: 2px solid #666CFF;
 }
 .intro-content button:hover {
-  background-color: #FFAE66;
+  background-color: #666CFF;
   color: white;
   border: 1px solid white;
 }
@@ -390,7 +390,7 @@ p {
   padding-bottom: 20px;
   border-bottom: 2px solid #666CFF;
 }
-.examples-content .examples .example h4 {
+.examples-content .examples .example h3 {
   margin: 20px 0;
 }
 .examples-content .examples .example p {
@@ -426,16 +426,16 @@ p {
 .examples-content .examples button {
   width: 100px;
   background-color: white;
-  color: #FFAE66;
+  color: #666CFF;
   cursor: pointer;
   border-radius: 5px;
   height: 40px;
   font-size: 1.8rem;
   font-family: 'Roboto Slab', serif;
-  border: 2px solid #FFAE66;
+  border: 2px solid #666CFF;
 }
 .examples-content .examples button:hover {
-  background-color: #FFAE66;
+  background-color: #666CFF;
   color: white;
   border: 1px solid white;
 }

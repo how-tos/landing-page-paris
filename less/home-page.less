@@ -49,8 +49,8 @@
 
     button {
         
-        .custom-btn(200px, white, @korokimo);
-        border: 2px solid @korokimo;
+        .custom-btn(200px,@sec-btn, @prim-btn);
+        border: 2px solid @prim-btn;
 
        @media @phone {
            width: 100%;
@@ -112,7 +112,7 @@
                 flex-direction: column;
 
                 p {
-                    padding: 20px 0;
+                    padding: 20px 0;                    
                 }
                 
                 img {
@@ -171,7 +171,7 @@
                 padding-bottom: 20px;
                 border-bottom: 2px solid @main-border-color;                
             }
-            h4 {
+            h3 {
                 margin: 20px 0;
             }
 
@@ -215,8 +215,8 @@
         }
         button {
         
-            .custom-btn(100px, white, @korokimo);
-            border: 2px solid @korokimo;
+            .custom-btn(100px, @sec-btn, @prim-btn);
+            border: 2px solid @prim-btn;
 
             @media @phone {
                 width: 100%;
