@@ -214,7 +214,7 @@ p {
 }
 .title-nav .icons a {
   padding: 0 20px 0;
-  font-size: 1.8rem;
+  font-size: 3rem;
   text-decoration: none;
   color: #FFAE66;
 }
@@ -235,6 +235,7 @@ p {
 @media (max-width: 500px) {
   .title-nav {
     justify-content: space-around;
+    align-items: flex-end;
   }
 }
 .intro-content {
