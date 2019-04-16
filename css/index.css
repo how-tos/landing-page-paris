@@ -187,6 +187,13 @@ p {
   border-bottom: none;
   z-index: 2;
 }
+.menu .searchBar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  height: 30px;
+}
 .menu a {
   text-decoration: none;
   color: white;
