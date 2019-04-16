@@ -210,10 +210,10 @@ p {
 }
 .title-nav .icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .title-nav .icons a {
-  padding: 0 5px 0;
+  padding: 0 20px 0;
   font-size: 1.8rem;
   text-decoration: none;
   color: #FFAE66;
@@ -222,14 +222,19 @@ p {
   display: none;
 }
 @media (max-width: 500px) {
-  .title-nav {
+  .title-nav .icons {
     display: flex;
   }
-  .title-nav h4 {
+  .title-nav .icons h4 {
     margin-left: 25px;
   }
-  .title-nav .icons {
+  .title-nav .icons .icons {
     margin-right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .title-nav {
+    justify-content: space-around;
   }
 }
 .intro-content {
