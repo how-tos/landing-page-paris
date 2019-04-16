@@ -292,6 +292,7 @@ p {
 }
 @media (max-width: 500px) {
   .intro-content button {
+    width: 100%;
     height: 75px;
     font-size: 2.8rem;
   }
@@ -434,6 +435,7 @@ p {
 }
 @media (max-width: 500px) {
   .examples-content .examples button {
+    width: 100%;
     height: 75px;
     font-size: 2.8rem;
   }
