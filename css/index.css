@@ -469,7 +469,6 @@ p {
 .about-intro .a-intro {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 48.7%;
 }
 @media (max-width: 500px) {
