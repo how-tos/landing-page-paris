@@ -248,6 +248,92 @@ p {
     align-items: center;
   }
 }
+.tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  margin-top: 20px;
+  background-color: white;
+}
+@media (min-width: 1280px) {
+  .tabs {
+    width: 1280px;
+  }
+}
+.tabs .topics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabs .topics .title {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .topics .tab {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  color: #666CFF;
+  background-color: white;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs .topics .tab:hover {
+  text-decoration: underline;
+}
+.tabs .topics .active-tab {
+  background-color: white;
+  color: #666CFF;
+  border: 2px solid #666CFF;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .cards-container {
+    width: 1200px;
+  }
+}
+.cards-container .card {
+  justify-content: center;
+  background-color: #F5F6F7;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+.cards-container .card .headline {
+  font-size: 2.6rem;
+  font-family: 'Roboto Slab', serif;
+}
+.cards-container .card .author {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.cards-container .card .author .img-container {
+  padding-right: 10px;
+  border-right: 1px solid #A6A6A6;
+  height: 40px;
+}
+.cards-container .card .author .img-container img {
+  width: 40px;
+}
+.cards-container .card .author span {
+  padding-left: 10px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
 .intro-content {
   display: flex;
   justify-content: space-between;

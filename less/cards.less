@@ -1,0 +1,44 @@
+.cards-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    
+    margin-top: 16px;
+    flex-wrap: wrap;
+    @media(min-width: 1200px){
+      width: 1200px;
+    }
+    .card {
+      
+      justify-content: center;
+      background-color: @porcelain;
+      width: 32%;
+      margin-bottom: 16px;
+      padding: 24px;
+      .headline {
+        font-size: 2.6rem;
+        font-family: @roboto-slab;
+      }
+      .author {
+        display: flex;
+        align-items:center;
+        margin-top: 15px;
+        .img-container {
+          padding-right: 10px;
+          border-right: 1px solid @chalice;
+          height: 40px;
+          img {
+            width: 40px;
+          }
+        }
+        span {
+          padding-left: 10px;
+          font-size: 1.8rem;
+          letter-spacing: 1px;
+          
+        }
+      }
+    }
+  }
