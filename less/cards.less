@@ -2,7 +2,7 @@
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     margin: 0 auto;
     
@@ -15,10 +15,10 @@
       
       background-color: @porcelain;
       width: 32%;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
       padding: 10px;
       
-      border-radius: 10px;
+    //   border-radius: 10px;
       .headline { 
           margin: 0 auto;   
           padding-bottom: 20px;    
@@ -45,5 +45,20 @@
           
         }
       }
+
+      @media @phone {
+          width: 90%;
+      }
+
+      
+    }
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+        
+        
     }
   }
