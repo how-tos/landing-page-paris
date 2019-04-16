@@ -1,0 +1,27 @@
+.custom-btn(@width, @bgColor, @fontColor) {
+    width: @width;
+    background-color: @bgColor;
+    color: @fontColor;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 1.8rem; 
+    font-family: @roboto-slab;
+
+    &:hover {
+        background-color: @fontColor;
+        color: @bgColor;
+        border: 1px solid @bgColor;
+    }
+}
+
+
+  
+  
+  
+  .flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+  }

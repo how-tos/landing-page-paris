@@ -1,0 +1,49 @@
+.title-nav{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 20px 0;
+
+    
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        
+        a {
+            margin-top: 20px;
+            padding: 0 20px 0;
+            font-size: 3rem;
+            text-decoration: none;
+            color: @alt-border-color;
+        }
+
+        .label {
+            display: none;
+        }
+
+        
+        @media @phone {
+            display: flex;
+            
+            
+            h4 {
+                margin-left: 25px;
+            }
+            
+            .icons {
+                margin-right: 20px;                        
+            }    
+
+        }         
+    
+    }
+
+    @media @phone {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;;
+    }
+
+}

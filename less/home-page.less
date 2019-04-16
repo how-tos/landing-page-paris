@@ -1,0 +1,245 @@
+.intro-content {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;   
+        
+
+    .intro-header {
+        display: flex;
+
+        h2 {
+            margin-bottom: 10px;
+            padding-bottom:10px;
+            border-bottom: 4px solid @main-border-color;
+        }
+    }
+    
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        width: 48.7%;   
+
+        @media @phone {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }    
+    }
+    .intro-img {
+        width: 48.7%;
+
+        img {        
+            border-radius: 10px;    
+            width: 100%;            
+        }
+        @media @phone {
+            width: 90%;
+            margin: 0 5%;
+        }
+    } 
+    
+
+    p {   
+        padding: 20px 0;
+    }   
+
+    button {
+        
+        .custom-btn(200px,@sec-btn, @prim-btn);
+        border: 2px solid @prim-btn;
+
+       @media @phone {
+           width: 100%;
+        height: 55px;
+        font-size: 2.4rem;
+       }
+    }
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.features-content {
+
+    margin-top: 10px;
+
+    .features-header {
+        display: flex;
+
+        h2 {
+            margin: 20px 0 10px 0;
+            padding-bottom: 10px;
+            border-bottom: 4px solid @main-border-color;
+
+            @media @phone {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    
+    
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0;
+       
+
+        .feature {
+            width: 48.5%;
+            padding: 20px 0;
+            display: flex;
+            align-items: flex-end;
+
+            i {
+                color: @alt-border-color;
+                font-size: 11rem;
+                height: 128px;
+                width: 128px;
+                // padding: 10px 0;
+            }
+
+            p {
+                padding: 20px 0 0 20px;
+            }
+            
+
+            @media @phone {
+                width: 90%;
+                margin: 0 auto;
+                flex-direction: column;
+
+                p {
+                    padding: 20px 0;                    
+                }
+                
+                img {
+                    
+                    margin: 0 auto;
+                }
+
+                .feat-icon {
+                    margin: 0 auto;
+                }
+                
+                
+            }
+        }
+        
+    }
+    
+    // @media @phone {
+    //     width: 100%;
+    //     margin: 0 auto;
+
+    // } 
+    
+    
+}
+
+.examples-content {
+
+    .examples-header {
+        display: flex;
+              
+        h2 {
+            margin-bottom: 10px;
+            padding-bottom:10px;
+            border-bottom: 4px solid @main-border-color;
+
+            @media @phone {
+                margin-left: 20px;
+            }
+
+        }
+    }
+
+    .examples {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        
+
+        .example {
+            width: 48.5%;
+            padding: 20px 0;
+            
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+
+            h2 {
+                margin: 20px 0 10px 0;
+                padding-bottom: 20px;
+                border-bottom: 2px solid @main-border-color;                
+            }
+            h3 {
+                margin: 20px 0;
+            }
+
+            p {                
+                padding-bottom: 20px;
+            }
+            
+            @media @phone {
+                width: 90%;
+                margin: 0 auto;
+
+                
+            }
+            
+            
+        }
+
+        @media @phone {
+
+            display: flex;
+            flex-direction: column;
+            .example:nth-child(3){
+                display: none;
+            }
+
+            .example:nth-child(4){
+                display: none;
+            }
+
+            .example:nth-child(5){
+                display: none;
+            }
+
+            .example:nth-child(6){
+                display: none;
+            }
+
+            .example:nth-child(7){
+                display: none;
+            }
+        }
+        button {
+        
+            .custom-btn(100px, @sec-btn, @prim-btn);
+            border: 2px solid @prim-btn;
+
+            @media @phone {
+                width: 100%;
+                height: 55px;
+                font-size: 2.4rem;
+            }
+        }
+
+
+    }
+
+
+
+
+}
