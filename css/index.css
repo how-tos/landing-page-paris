@@ -1,3 +1,4 @@
+@import "fontawesome.min.css";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,16 +168,48 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 15%;
+  height: 100vh;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: #FFAE66;
+  color: white;
+  border: 1px solid white;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 10px;
+  z-index: 2;
+  /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 2.2rem;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+.menu--open {
+  display: block;
+}
 .title-nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
 }
-.title-nav nav {
+.title-nav .icons {
   display: flex;
   justify-content: space-around;
 }
-.title-nav nav a {
+.title-nav .icons a {
   padding: 0 10px 0;
   font-size: 1.8rem;
   text-decoration: none;
