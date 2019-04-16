@@ -340,6 +340,8 @@ p {
 .features-content .features .feature i {
   color: #FFAE66;
   font-size: 11rem;
+  height: 128px;
+  width: 128px;
 }
 .features-content .features .feature p {
   padding: 20px 0 0 20px;
@@ -356,7 +358,7 @@ p {
   .features-content .features .feature img {
     margin: 0 auto;
   }
-  .features-content .features .feature i {
+  .features-content .features .feature .feat-icon {
     margin: 0 auto;
   }
 }
