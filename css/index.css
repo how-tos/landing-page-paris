@@ -729,6 +729,8 @@ p {
   }
 }
 footer {
+  background-color: #666CFF;
+  color: white;
   display: flex;
   justify-content: center;
   padding: 20px 0;
