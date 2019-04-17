@@ -168,55 +168,62 @@ p {
   width: 95%;
   margin: 0 auto;
 }
-.menu-button {
-  position: absolute;
-  left: 20px;
-  cursor: pointer;
-}
-.menu {
-  display: none;
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
   position: fixed;
-  top: 50px;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
   left: 0;
-  width: 20%;
-  height: 100vh;
   background-color: #FFAE66;
-  color: white;
-  border: 1px solid white;
-  border-left: none;
-  border-bottom: none;
-  z-index: 2;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
 }
-.menu .searchBar {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  font-family: 'Open Sans', sans-serif;
-  height: 30px;
-}
-.menu a {
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-size: 25px;
   color: white;
   display: block;
   transition: 0.3s;
 }
-.menu a:hover {
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
   color: #666CFF;
 }
-.menu li {
-  list-style-type: none;
-  font-size: 2.2rem;
-  padding: 20px 0;
-  text-align: center;
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
-@media (max-width: 500px) {
-  .menu {
-    width: 100%;
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-}
-.menu--open {
-  display: block;
-  transition: 0.5s;
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 .title-nav {
   display: flex;
