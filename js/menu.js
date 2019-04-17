@@ -1,14 +1,9 @@
-const toggleMenu = () => {    
-    let element = document.querySelector('.menu')
-    element.classList.toggle('menu--open');   
-  };
-  
-  
-  const menu = document.querySelector('.menu');
-  
-  const menuButton = document.querySelector('.menu-button');
-  
-  menuButton.addEventListener('click', function() {
-    toggleMenu();
-  });
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

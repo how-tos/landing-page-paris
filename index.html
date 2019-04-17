@@ -15,22 +15,36 @@
         
         <div class = "main-container">            
             <div class="main-body">
-                    <div class ="sidebar">
-                            <img class = "menu-button" src = "imgs/menu-orange.png"/>
+                    <!-- <div class ="sidebar">
+                        <img class = "menu-button" src = "imgs/menu-orange.png"/>
+                    </div>
+                    <div class = "menu">
+                        <div class = "searchBar">
+                            <input type="text" placeholder="Search..">
                         </div>
-                        <div class = "menu">
-                            <div class = "searchBar">
-                                <input type="text" placeholder="Search..">
-                            </div>
-                            <ul>
+                        <ul>
                                 
-                                <li><a href = "index.html">Home</a></li>
-                                <li><a href = "#">Log In</a></li>
-                                <li><a href = "#">Register</a></li>
-                                <li><a href = "about.html">About Us</a></li>
-                                <li><a href = "#">Contact</a></li>
-                            </ul>                
-                        </div>
+                            <li><a href = "index.html">Home</a></li>
+                            <li><a href = "#">Log In</a></li>
+                            <li><a href = "#">Register</a></li>
+                            <li><a href = "about.html">About Us</a></li>
+                            <li><a href = "#">Contact</a></li>
+                        </ul>                
+                    </div> -->
+                    <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="index.html">Home</a>
+                            <a href="https://how-to-lambda.netlify.com/">Log In</a>
+                            <a href="#">Sign Up</a>
+                            <a href="about.html">About Us</a>
+                            <a href="#">Contact</a>
+                    </div>
+                          
+                          
+                    <span onclick="openNav()"><img src="imgs/menu-orange.png"></span>
+                          
+                         
+                    
                 <header>
                     <div class = "title-nav">           
                         <img src = "imgs/H2-Logo-Blue.png">
@@ -73,25 +87,19 @@
                         </div>
                         <div class = "features">
                             <div class = "feature">
-                                <!-- <img class = "feature-img" src = "imgs/img_icon.png"> -->
-                                <span class = "feat-icon"><i class="fas fa-bacon"></i></span>
-                                <p>It's a fez. I wear a fez now. Fezes are cool. Sorry, checking all the water in this area; there's an escaped fish. Stop talking, brain thinking. Hush. I am the last of my species, and I know how that weighs on the heart so don't lie to me!</p>
+                                <span class = "feat-icon"><i class="fas fa-brain"></i></span>
+                                <p>Create new how-to guides to share with others. Upload your own images or illustrations. Create step-by-step instructions.</p>
                                 
                             </div>
-                            <div class = "feature">
-                                <!-- <img class = "feature-img" src = "imgs/img_icon.png"> -->
-                                <span class = "feat-icon"><i class="fas fa-blender"></i></span>
-                                <p>Did I mention we have comfy chairs? I'm the Doctor. Well, they call me the Doctor. I don't know why. I call me the Doctor too. I still don't know why. They're not aliens, they're Earth…liens! I am the Doctor, and you are the Daleks!</p>
+                            <div class = "feature">               <span class = "feat-icon"><i class="fas fa-eraser"></i></span>
+                                <p>Edit your how-to guides.</p>
                             </div>
                             <div class = "feature">
-                                <!-- <img class = "feature-img" src = "imgs/img_icon.png"> -->
-                                <span class = "feat-icon"><i class="fas fa-brain"></i></span>
-                                <p>I'm the Doctor, I'm worse than everyone's aunt. *catches himself* And that is not how I'm introducing myself. You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better?</p>
+                                <span class = "feat-icon"><i class="fas fa-search"></i></span>
+                                <p>Search how-to guides from thousands of creators.</p>
                             </div>
-                            <div class = "feature">
-                                <!-- <img class = "feature-img" src = "imgs/img_icon.png"> -->
-                                <span class = "feat-icon"><i class="fas fa-bomb"></i></span>
-                                <p>They're not aliens, they're Earth…liens! Did I mention we have comfy chairs? Aw, you're all Mr. Grumpy Face today. Aw, you're all Mr. Grumpy Face today. You've swallowed a planet! Did I mention we have comfy chairs?</p>
+                            <div class = "feature">               <span class = "feat-icon"><i class="fas fa-heart"></i></span>
+                                <p>Favorite the how-to guides you like the most!</p>
                             </div>                           
                         </div>
                     </section>
@@ -104,27 +112,27 @@
                         </div>
                         <div class = "examples">
                             <div class = "example">
-                                <img src = "imgs/paint.png">
-                                <h3>We don't have a brig.</h3>
-                                <p>D'oh. Human contact: the final frontier. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. They only come out in the night. Or in this case, the day.</p>
+                                <img src = "imgs/planter.png">
+                                <h3>Build planters with refurbished wood</h3>
+                                <!-- <p>D'oh. Human contact: the final frontier. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. They only come out in the night. Or in this case, the day.</p> -->
                                 <button class = "examples-btn">More</button>
                             </div>
                             <div class = "example">
-                                <img src = "imgs/paint.png">
-                                <h3>Why, those are the Grunka-Lunkas!</h3>
-                                <p>D'oh. Human contact: the final frontier. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. They only come out in the night. Or in this case, the day.</p>
+                                <img src = "imgs/wallet.png">
+                                <h3>Sew a leather wallet</h3>
+                                <!-- <p>D'oh. Human contact: the final frontier. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. They only come out in the night. Or in this case, the day.</p> -->
                                 <button class = "examples-btn">More</button>
                             </div>
                             <div class = "example">
-                                <img src = "imgs/paint.png">
-                                <h3>I'm sure those windmills will keep them cool.</h3>
-                                <p>D'oh. Human contact: the final frontier. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. They only come out in the night. Or in this case, the day.</p>
+                                <img src = "imgs/dressform.png">
+                                <h3>Create your own dress form</h3>
+                                <!-- <p>D'oh. Human contact: the final frontier. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. They only come out in the night. Or in this case, the day.</p> -->
                                 <button class = "examples-btn">More</button>
                             </div>
                             <div class = "example">
-                                <img src = "imgs/paint.png">
-                                <h3>Calculon is gonna kill us and it's all everybody else's fault!</h3>
-                                <p>D'oh. Human contact: the final frontier. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. They only come out in the night. Or in this case, the day.</p>
+                                <img src = "imgs/campstove.png">
+                                <h3>DIY camp stove</h3>
+                                <!-- <p>D'oh. Human contact: the final frontier. Mrs. Krabappel and Principal Skinner were in the closet making babies and I saw one of the babies and then the baby looked at me. They only come out in the night. Or in this case, the day.</p> -->
                                 <button class = "examples-btn">More</button>
                             </div>
                         </div>
