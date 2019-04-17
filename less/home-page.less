@@ -29,6 +29,12 @@
             margin: 0 auto;
             padding-bottom: 20px;
         }    
+
+        @media @tablet {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
     }
     .intro-img {
         width: 48.7%;
@@ -37,9 +43,13 @@
             border-radius: 10px;    
             width: 100%;            
         }
-        @media @phone {
-            width: 90%;
-            margin: 0 5%;
+        // @media @phone {
+        //     width: 90%;
+        //     margin: 0 5%;
+        // }
+
+        @media @tablet {
+            display: none;
         }
     } 
     
@@ -54,7 +64,7 @@
         margin-top: 20px;
 
         .sign-up-btn {
-            .custom-btn(200px,@sec-btn, @korokimo);
+            .custom-btn(125px,@sec-btn, @korokimo);
             border: 2px solid @korokimo;
             margin-right: 20px;
             
@@ -69,13 +79,14 @@
             @media @tablet {
                 
                 height: 55px;
-                font-size: 2rem;            
+                font-size: 2rem;  
+                margin-bottom: 20px;          
             }
         }
         
         .log-in-btn{
         
-            .custom-btn(200px,@sec-btn, @prim-btn);
+            .custom-btn(125px,@sec-btn, @prim-btn);
             border: 2px solid @prim-btn;            
 
             @media @phone {
@@ -99,9 +110,11 @@
         }
 
         // @media @tablet {
-        //     justify-content: space-between;
+        //     display: none;
             
         // }
+
+        
 
         
     }
@@ -110,6 +123,11 @@
         display: flex;
         flex-direction: column;
     }
+    // @media @tablet {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    
 }
 
 .features-content {
