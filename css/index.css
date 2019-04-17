@@ -420,7 +420,7 @@ p {
 .intro-content .intro-btns {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin-top: 20px;
 }
 .intro-content .intro-btns .sign-up-btn {
   width: 200px;
@@ -432,6 +432,7 @@ p {
   font-size: 1.8rem;
   font-family: 'Roboto Slab', serif;
   border: 2px solid #FFAE66;
+  margin-right: 20px;
 }
 .intro-content .intro-btns .sign-up-btn:hover {
   background-color: #FFAE66;
@@ -448,7 +449,6 @@ p {
 }
 @media (max-width: 800px) {
   .intro-content .intro-btns .sign-up-btn {
-    width: 48.5%;
     height: 55px;
     font-size: 2rem;
   }
@@ -479,7 +479,6 @@ p {
 }
 @media (max-width: 800px) {
   .intro-content .intro-btns .log-in-btn {
-    width: 48.5%;
     height: 55px;
     font-size: 2rem;
   }
@@ -487,12 +486,6 @@ p {
 @media (max-width: 500px) {
   .intro-content .intro-btns {
     flex-direction: column;
-  }
-}
-@media (max-width: 800px) {
-  .intro-content .intro-btns {
-    justify-content: space-between;
-    width: 100%;
   }
 }
 @media (max-width: 500px) {

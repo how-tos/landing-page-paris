@@ -50,11 +50,13 @@
     .intro-btns {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        // justify-content: space-around;
+        margin-top: 20px;
 
         .sign-up-btn {
             .custom-btn(200px,@sec-btn, @korokimo);
             border: 2px solid @korokimo;
+            margin-right: 20px;
             
 
             @media @phone {
@@ -65,7 +67,7 @@
             }
 
             @media @tablet {
-                width: 48.5%;
+                
                 height: 55px;
                 font-size: 2rem;            
             }
@@ -85,7 +87,7 @@
             }
 
             @media @tablet {
-                width: 48.5%;
+                
                 height: 55px;
                 font-size: 2rem;            
             
@@ -96,10 +98,10 @@
             flex-direction: column;            
         }
 
-        @media @tablet {
-            justify-content: space-between;
-            width: 100%;
-        }
+        // @media @tablet {
+        //     justify-content: space-between;
+            
+        // }
 
         
     }
