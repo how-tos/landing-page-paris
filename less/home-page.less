@@ -19,9 +19,10 @@
     .intro {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        
+        // justify-content: space-between;       
         width: 48.7%;   
+
+        
 
         @media @phone {
             width: 90%;
@@ -42,21 +43,31 @@
         }
     } 
     
-
     p {   
         padding: 20px 0;
     }   
 
-    button {
+    .intro-btns {
+        display: flex;
+        flex-direction: row;
         
-        .custom-btn(200px,@sec-btn, @prim-btn);
-        border: 2px solid @prim-btn;
+        button {
+        
+            .custom-btn(200px,@sec-btn, @prim-btn);
+            border: 2px solid @prim-btn;
+            margin-right: 20px;
 
-       @media @phone {
-           width: 100%;
-        height: 55px;
-        font-size: 2.4rem;
-       }
+            @media @phone {
+                width: 100%;
+                height: 55px;
+                font-size: 2.4rem;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media @phone {           
+            flex-direction: column;            
+        }
     }
 
     @media @phone {
