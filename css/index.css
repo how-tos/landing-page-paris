@@ -401,6 +401,13 @@ p {
     padding-bottom: 20px;
   }
 }
+@media (max-width: 800px) {
+  .intro-content .intro {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
 .intro-content .intro-img {
   width: 48.7%;
 }
@@ -408,10 +415,9 @@ p {
   border-radius: 10px;
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .intro-content .intro-img {
-    width: 90%;
-    margin: 0 5%;
+    display: none;
   }
 }
 .intro-content p {
@@ -423,7 +429,7 @@ p {
   margin-top: 20px;
 }
 .intro-content .intro-btns .sign-up-btn {
-  width: 200px;
+  width: 125px;
   background-color: white;
   color: #FFAE66;
   cursor: pointer;
@@ -451,10 +457,11 @@ p {
   .intro-content .intro-btns .sign-up-btn {
     height: 55px;
     font-size: 2rem;
+    margin-bottom: 20px;
   }
 }
 .intro-content .intro-btns .log-in-btn {
-  width: 200px;
+  width: 125px;
   background-color: white;
   color: #666CFF;
   cursor: pointer;
