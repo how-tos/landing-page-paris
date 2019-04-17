@@ -87,13 +87,18 @@
             @media @tablet {
                 width: 48.5%;
                 height: 55px;
-                font-size: 2rem;              
+                font-size: 2rem;            
             
             }
         }
 
         @media @phone {           
             flex-direction: column;            
+        }
+
+        @media @tablet {
+            justify-content: space-between;
+            width: 100%;
         }
 
         
@@ -136,18 +141,16 @@
             width: 48.5%;
             padding: 20px 0;
             display: flex;
-            align-content: center;
+            align-items: center;
+            margin-bottom: 10px;
 
             i {
                 color: @alt-border-color;
-                font-size: 8rem;
-                height: 128px;
-                width: 128px;
-                // padding: 10px 0;
+                font-size: 8rem;                
             }
 
             p {
-                padding: 20px 0 0 20px;
+                padding: 20px 0 0 30px;
             }
             
 
