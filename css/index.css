@@ -734,4 +734,10 @@ footer {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  footer {
+    font-size: 1.2rem;
+  }
 }
