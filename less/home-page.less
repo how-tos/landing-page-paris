@@ -50,8 +50,21 @@
     .intro-btns {
         display: flex;
         flex-direction: row;
+
+        .sign-up-btn {
+            .custom-btn(200px,@sec-btn, @korokimo);
+            border: 2px solid @korokimo;
+            margin-right: 20px;
+
+            @media @phone {
+                width: 100%;
+                height: 55px;
+                font-size: 2.4rem;
+                margin-bottom: 20px;
+            }
+        }
         
-        button {
+        .log-in-btn{
         
             .custom-btn(200px,@sec-btn, @prim-btn);
             border: 2px solid @prim-btn;

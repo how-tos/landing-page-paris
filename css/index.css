@@ -408,7 +408,32 @@ p {
   display: flex;
   flex-direction: row;
 }
-.intro-content .intro-btns button {
+.intro-content .intro-btns .sign-up-btn {
+  width: 200px;
+  background-color: white;
+  color: #FFAE66;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 1.8rem;
+  font-family: 'Roboto Slab', serif;
+  border: 2px solid #FFAE66;
+  margin-right: 20px;
+}
+.intro-content .intro-btns .sign-up-btn:hover {
+  background-color: #FFAE66;
+  color: white;
+  border: 1px solid white;
+}
+@media (max-width: 500px) {
+  .intro-content .intro-btns .sign-up-btn {
+    width: 100%;
+    height: 55px;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+}
+.intro-content .intro-btns .log-in-btn {
   width: 200px;
   background-color: white;
   color: #666CFF;
@@ -420,13 +445,13 @@ p {
   border: 2px solid #666CFF;
   margin-right: 20px;
 }
-.intro-content .intro-btns button:hover {
+.intro-content .intro-btns .log-in-btn:hover {
   background-color: #666CFF;
   color: white;
   border: 1px solid white;
 }
 @media (max-width: 500px) {
-  .intro-content .intro-btns button {
+  .intro-content .intro-btns .log-in-btn {
     width: 100%;
     height: 55px;
     font-size: 2.4rem;
