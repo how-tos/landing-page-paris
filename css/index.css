@@ -168,7 +168,6 @@ p {
   width: 95%;
   margin: 0 auto;
 }
-/* The side navigation menu */
 .sidenav {
   height: 100%;
   /* 100% Full-height */
@@ -185,44 +184,39 @@ p {
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 60px;
+  padding-top: 6rem;
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
 }
-/* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 2.4rem;
   color: white;
   display: block;
   transition: 0.3s;
 }
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #666CFF;
 }
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 3.6rem;
   margin-left: 50px;
 }
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
   padding: 20px;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media (max-width: 500px) {
   .sidenav {
-    padding-top: 15px;
+    padding-top: 20px;
   }
   .sidenav a {
-    font-size: 18px;
+    font-size: 2.4rem;
   }
 }
 .title-nav {
@@ -297,11 +291,16 @@ p {
 .tabs .topics .tab:hover {
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  .tabs .topics .tab {
+    padding: 0;
+    margin: 0 2px;
+  }
+}
 .tabs .topics .active-tab {
   background-color: white;
   color: #666CFF;
-  border: 2px solid #666CFF;
-  border-radius: 20px;
+  border-bottom: 2px solid #666CFF;
 }
 @media (max-width: 500px) {
   .tabs .topics {
@@ -310,6 +309,12 @@ p {
   }
   .tabs .topics .tab {
     margin-top: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .tabs .topics {
+    display: flex;
+    justify-content: space-around;
   }
 }
 @media (max-width: 500px) {
@@ -415,6 +420,7 @@ p {
 .intro-content .intro-btns {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 .intro-content .intro-btns .sign-up-btn {
   width: 200px;
@@ -426,7 +432,6 @@ p {
   font-size: 1.8rem;
   font-family: 'Roboto Slab', serif;
   border: 2px solid #FFAE66;
-  margin-right: 20px;
 }
 .intro-content .intro-btns .sign-up-btn:hover {
   background-color: #FFAE66;
@@ -441,6 +446,13 @@ p {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 800px) {
+  .intro-content .intro-btns .sign-up-btn {
+    width: 48.5%;
+    height: 55px;
+    font-size: 2rem;
+  }
+}
 .intro-content .intro-btns .log-in-btn {
   width: 200px;
   background-color: white;
@@ -451,7 +463,6 @@ p {
   font-size: 1.8rem;
   font-family: 'Roboto Slab', serif;
   border: 2px solid #666CFF;
-  margin-right: 20px;
 }
 .intro-content .intro-btns .log-in-btn:hover {
   background-color: #666CFF;
@@ -464,6 +475,13 @@ p {
     height: 55px;
     font-size: 2.4rem;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .intro-content .intro-btns .log-in-btn {
+    width: 48.5%;
+    height: 55px;
+    font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
