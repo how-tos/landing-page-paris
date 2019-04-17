@@ -31,13 +31,17 @@
         font-weight: bold;
         &:hover {
           text-decoration: none;
+        }      
+        
+        @media @tablet {
+          padding: 0;
+          margin: 0 2px;
         }
       }
       .active-tab {
         background-color: white;
         color: @flower-blue;
-        border: 2px solid @flower-blue;
-        border-radius: 20px;
+        border-bottom: 2px solid @flower-blue;       
       }
 
       @media @phone {
@@ -47,13 +51,19 @@
         .tab {
             margin-top: 10px;
         }
+      }
+
+      @media @tablet {
+        display: flex;
+        justify-content: space-around;
         
-        }
+        
+      }        
     }
 
     @media @phone {
         height: auto;
     }
-
+    
     
   }

@@ -50,37 +50,58 @@
     .intro-btns {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
 
         .sign-up-btn {
             .custom-btn(200px,@sec-btn, @korokimo);
             border: 2px solid @korokimo;
-            margin-right: 20px;
+            
 
             @media @phone {
                 width: 100%;
                 height: 55px;
                 font-size: 2.4rem;
                 margin-bottom: 20px;
+            }
+
+            @media @tablet {
+                width: 48.5%;
+                height: 55px;
+                font-size: 2rem;            
             }
         }
         
         .log-in-btn{
         
             .custom-btn(200px,@sec-btn, @prim-btn);
-            border: 2px solid @prim-btn;
-            margin-right: 20px;
+            border: 2px solid @prim-btn;            
 
             @media @phone {
                 width: 100%;
                 height: 55px;
                 font-size: 2.4rem;
                 margin-bottom: 20px;
+                
+            }
+
+            @media @tablet {
+                width: 48.5%;
+                height: 55px;
+                font-size: 2rem;            
+            
             }
         }
 
         @media @phone {           
             flex-direction: column;            
         }
+
+        @media @tablet {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        
     }
 
     @media @phone {
@@ -120,18 +141,16 @@
             width: 48.5%;
             padding: 20px 0;
             display: flex;
-            align-content: center;
+            align-items: center;
+            margin-bottom: 10px;
 
             i {
                 color: @alt-border-color;
-                font-size: 8rem;
-                height: 128px;
-                width: 128px;
-                // padding: 10px 0;
+                font-size: 8rem;                
             }
 
             p {
-                padding: 20px 0 0 20px;
+                padding: 20px 0 0 30px;
             }
             
 
