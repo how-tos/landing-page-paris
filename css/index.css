@@ -665,6 +665,13 @@ p {
   flex-direction: column;
   width: 48.7%;
 }
+.about-intro .a-intro p a {
+  text-decoration: none;
+  color: #666CFF;
+}
+.about-intro .a-intro p a:hover {
+  color: #FFAE66;
+}
 @media (max-width: 500px) {
   .about-intro .a-intro {
     width: 90%;

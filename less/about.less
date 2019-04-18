@@ -20,6 +20,17 @@
         flex-direction: column;
         width: 48.7%;   
 
+        p {
+            a {
+                text-decoration: none;
+                color: @main-border-color;
+
+                &:hover {
+                    color: @alt-border-color;
+                }
+            }
+        }
+
         @media @phone {
             width: 90%;
             margin: 0 auto;
