@@ -11,31 +11,30 @@
         <script src = "js/menu.js" async></script>
         <script src = "js/tabs.js" async></script>
     </head>
-    <body>
-        
+    <body>        
         <div class = "main-container">        
-            <div id = main" class="main-body">
-                    <div id="mySidenav" class="sidenav">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <a href="index.html">Home</a>
-                            <a href="https://how-to-lambda.netlify.com/">Log In</a>
-                            <a href="#">Sign Up</a>
-                            <a href="about.html">About Us</a>
-                            <a href="#">Contact</a>
-                    </div>
-                          
-                          
-                    <span onclick="openNav()"><img src="imgs/menu-orange.png"></span>
+            <div class="main-body">
+                <!-- Hamburger Menu -->  
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="https://how-to-lambda.netlify.com/">Log In</a>
+                    <a href="#">Sign Up</a>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Contact</a>
+                </div>                        
+                <span onclick="openNav()"><img src="imgs/menu-orange.png"></span>
+
                  <header>
                     <div class = "title-nav">         
                         <img src = "imgs/H2-Logo-Blue.png">
-                        <p></p>                              
+                        <p></p>                      
                         <nav>
                             <ul class = "icons">
-                                <li><a href="#" class="fab fa-twitter"><span class="label">Twitter</span></a></li>
-                                <li><a href="#" class="fab fa-facebook"><span class="label">Facebook</span></a></li>
-                                <li><a href="#" class="fab fa-snapchat-ghost"><span class="label" >Snapchat</span></a></li>
-                                <li><a href="#" class="fab fa-instagram"><span class="label" >Instagram</span></a></li> 
+                                <li><a href="http://www.twitter.com" target="_blank" class="fab fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="http://www.facebook.com" target="_blank" class="fab fa-facebook"><span class="label">Facebook</span></a></li>
+                                <li><a href="http://www.snapchat.com" target="_blank" class="fab fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                                <li><a href="http://www.instagram.com" target="_blank" class="fab fa-instagram"><span class="label" >Instagram</span></a></li> 
                             </ul>
                         </nav>
                     </div> 
@@ -47,13 +46,15 @@
                                 <h1>About Us:</h1>
                                 <p></p>
                             </div>
-                            <p>Apple pie oat cake dessert bear claw jelly-o soufflé. Liquorice sweet sugar plum. Icing sugar plum carrot cake candy I love halvah sweet. Wafer pudding cake chupa chups cookie marzipan chocolate powder I love. Gingerbread muffin caramels tiramisu brownie. Cookie dessert chocolate tootsie roll soufflé gummies I love. Lemon drops pie lemon drops soufflé sesame snaps gingerbread I love. Liquorice chocolate danish gummies carrot cake fruitcake sweet roll bear claw. Jujubes bear claw tart jujubes liquorice I love cupcake tart cake.</p>
-                                <!-- <button class = "intro-btn">Learn more!</button> -->
+                            <p>We are a team of <a href = "http://www.lambdaschool.com" target="_blank">Lambda School</a> students. This site is a reflection of the content we have learned over the last four weeks.</p>
                         </div>   
                         <div class = "about-img">
-                            <img src = "imgs/artscrafts.png">
+                            <img src = "imgs/teamwork.png">
                         </div>          
-                    </section>                  
+                    </section>
+                    
+                    <section class = "about-tabs">        
+                        <!-- Tabs Section -->      
                         <div class = "tabs">
                             <div class = "topics">
                                 <span class="title">Our Team:</span>
@@ -66,72 +67,75 @@
                                 <div data-tab="pearl" class="tab">PEARL</div>
                             </div>
                         </div>
-                        <div class="cards-container">
-
-                                <!-- CARD COMPONENTS -->
-                                <div class="card" data-tab="savannah">
-                                  <div class="headline">Savannah Greuel</div>
-                                  <div class="author">
+                        <!-- Cards Section -->
+                        <div class="cards-container">   
+                            <!-- Card 1 -->        
+                            <div class="card" data-tab="savannah">
+                                <div class="headline">Savannah Greuel</div>
+                                <div class="author">
                                     <div class="img-container">
-                                      <img src="/imgs/cat.png" />
+                                        <img src="/imgs/savannah.png" />
                                     </div>
-                                    <span>Team Leader</span>
-                                  </div>
+                                    <span>Team Leader <a href="https://github.com/SavannahGreuel" target="_blank"><i class="fab fa-github-alt"></i></a></span>
+                                    
                                 </div>
-
-                                <div class="card" data-tab="ryan">
-                                    <div class="headline">Ryan Clark</div>
-                                    <div class="author">
-                                        <div class="img-container">
-                                            <img src="/imgs/ryan.png" />
-                                        </div>
-                                        <span>Back-End Architect</span>
+                            </div>
+                            <!-- Card 2 -->    
+                            <div class="card" data-tab="ryan">
+                                <div class="headline">Ryan Clark</div>
+                                <div class="author">
+                                    <div class="img-container">
+                                        <img src="/imgs/ryan.png" />
                                     </div>
+                                    <span>Back-End Architect <a href="https://github.com/ryangclark" target="_blank"><i class="fab fa-github-alt"></i></a></span>
                                 </div>
-
-                                <div class="card" data-tab="erica">
-                                    <div class="headline">Erica Chen</div>
-                                    <div class="author">
-                                        <div class="img-container">
-                                            <img src="/imgs/erica.png" />
-                                        </div>
-                                        <span>Front-End Architect</span>
+                            </div>
+                            <!-- Card 3 -->    
+                            <div class="card" data-tab="erica">
+                                <div class="headline">Erica Chen</div>
+                                <div class="author">
+                                    <div class="img-container">
+                                        <img src="/imgs/erica.png" />
                                     </div>
+                                    <span>Front-End Architect <a href="https://github.com/erica-y-chen" target="_blank"><i class="fab fa-github-alt"></i></a></span>
                                 </div>
-
-                                <div class="card" data-tab="gabriel">
-                                    <div class="headline">Gabriel Romero</div>
-                                    <div class="author">
-                                        <div class="img-container">
-                                            <img src="/imgs/gabriel.png" />
-                                        </div>
-                                        <span>UX Designer</span>
+                            </div>
+                            <!-- Card 4 -->    
+                            <div class="card" data-tab="gabriel">
+                                <div class="headline">Gabriel Romero</div>
+                                <div class="author">
+                                    <div class="img-container">
+                                        <img src="/imgs/gabriel.png" />
                                     </div>
+                                    <span>UX Designer <a href="https://github.com/gabester78" target="_blank"><i class="fab fa-github-alt"></i></a></span>
                                 </div>
-
-                                <div class="card" data-tab="benjamin">
-                                    <div class="headline">Benjamin Lopez</div>
-                                    <div class="author">
-                                        <div class="img-container">
-                                            <img src="/imgs/ben.png" />
-                                        </div>
-                                        <span>User Interface Developer</span>
+                            </div>
+                            <!-- Card 5 -->    
+                            <div class="card" data-tab="benjamin">
+                                <div class="headline">Benjamin Lopez</div>
+                                <div class="author">
+                                    <div class="img-container">
+                                        <img src="/imgs/ben.png" />
                                     </div>
+                                    <span>User Interface Developer <a href="https://github.com/bejolo018" target="_blank"><i class="fab fa-github-alt"></i></a></span>
                                 </div>
-
-                                <div class="card" data-tab="pearl">
-                                    <div class="headline">Pearl Paris</div>
-                                    <div class="author">
-                                        <div class="img-container">
-                                            <img src="/imgs/pearl.png" />
-                                        </div>
-                                        <span>User Interface Developer</span>
+                            </div>
+                            <!-- Card 6 -->    
+                            <div class="card" data-tab="pearl">
+                                <div class="headline">Pearl Paris</div>
+                                <div class="author">
+                                    <div class="img-container">
+                                        <img src="/imgs/pearl.png" />
                                     </div>
+                                    <span>User Interface Developer <a href="https://github.com/coriagogo" target="_blank"><i class="fab fa-github-alt"></i></a></span>
                                 </div>
-                    </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+                <!-- Footer -->
                 <footer>
-                        <span>Copyright &copy; 2019 How-to, LLC All Rights Reserved</span>
+                    <span>Copyright &copy; 2019 How-to, LLC All Rights Reserved</span>
                 </footer>
             </div>
     </body>

@@ -363,14 +363,22 @@ p {
   letter-spacing: 1px;
   padding-bottom: 20px;
 }
+.cards-container .card .author a {
+  color: #666CFF;
+  font-size: 2rem;
+  padding-left: 10px;
+}
+.cards-container .card .author a:hover {
+  color: #FFAE66;
+}
 @media (max-width: 500px) {
-  .cards-container .card {
+  .cards-container .card .author {
     width: 90%;
     border-radius: 10px;
   }
 }
 @media (max-width: 500px) {
-  .cards-container {
+  .cards-container .card {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -414,6 +422,13 @@ p {
 .intro-content .intro-img img {
   border-radius: 10px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .intro-content .intro-img {
+    display: content;
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 @media (max-width: 800px) {
   .intro-content .intro-img {
@@ -657,6 +672,13 @@ p {
   display: flex;
   flex-direction: column;
   width: 48.7%;
+}
+.about-intro .a-intro p a {
+  text-decoration: none;
+  color: #666CFF;
+}
+.about-intro .a-intro p a:hover {
+  color: #FFAE66;
 }
 @media (max-width: 500px) {
   .about-intro .a-intro {

@@ -13,16 +13,12 @@
             padding-bottom:10px;
             border-bottom: 4px solid @main-border-color;
         }
-    }
-    
+    }    
 
     .intro {
         display: flex;
-        flex-direction: column;
-        // justify-content: space-between;       
-        width: 48.7%;   
-
-        
+        flex-direction: column;               
+        width: 48.7%;           
 
         @media @phone {
             width: 90%;
@@ -36,6 +32,7 @@
             padding-bottom: 20px;
         }
     }
+
     .intro-img {
         width: 48.7%;
 
@@ -43,10 +40,11 @@
             border-radius: 10px;    
             width: 100%;            
         }
-        // @media @phone {
-        //     width: 90%;
-        //     margin: 0 5%;
-        // }
+        @media @phone {
+            display: content;
+            width: 90%;
+            margin: 0 5%;
+        }
 
         @media @tablet {
             display: none;
@@ -59,8 +57,7 @@
 
     .intro-btns {
         display: flex;
-        flex-direction: row;
-        // justify-content: space-around;
+        flex-direction: row;        
         margin-top: 20px;
 
         .sign-up-btn {
@@ -84,7 +81,7 @@
             }
         }
         
-        .log-in-btn{
+        .log-in-btn {
         
             .custom-btn(125px,@sec-btn, @prim-btn);
             border: 2px solid @prim-btn;            
@@ -98,36 +95,20 @@
             }
 
             @media @tablet {
-                
                 height: 55px;
-                font-size: 2rem;            
-            
+                font-size: 2rem;       
             }
         }
 
         @media @phone {           
             flex-direction: column;            
         }
-
-        // @media @tablet {
-        //     display: none;
-            
-        // }
-
-        
-
-        
     }
 
     @media @phone {
         display: flex;
         flex-direction: column;
     }
-    // @media @tablet {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-    
 }
 
 .features-content {
@@ -146,16 +127,13 @@
                 margin-left: 20px;
             }
         }
-    }
-
-    
+    }    
     
     .features {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 20px 0;
-       
+        margin: 20px 0;       
 
         .feature {
             width: 48.5%;
@@ -171,8 +149,7 @@
 
             p {
                 padding: 20px 0 0 30px;
-            }
-            
+            }            
 
             @media @phone {
                 width: 90%;
@@ -190,21 +167,10 @@
 
                 .feat-icon {
                     margin: 0 auto;
-                }
-                
-                
+                }           
             }
-        }
-        
-    }
-    
-    // @media @phone {
-    //     width: 100%;
-    //     margin: 0 auto;
-
-    // } 
-    
-    
+        }        
+    }  
 }
 
 .examples-content {
@@ -220,16 +186,13 @@
             @media @phone {
                 margin-left: 20px;
             }
-
         }
     }
 
     .examples {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        
-        
+        flex-wrap: wrap;    
 
         .example {
             width: 48.5%;
@@ -255,40 +218,36 @@
             
             @media @phone {
                 width: 90%;
-                margin: 0 auto;
-
-                
-            }
-            
-            
+                margin: 0 auto;                
+            }           
         }
 
         @media @phone {
 
             display: flex;
             flex-direction: column;
-            .example:nth-child(3){
+            .example:nth-child(3) {
                 display: none;
             }
 
-            .example:nth-child(4){
+            .example:nth-child(4) {
                 display: none;
             }
 
-            .example:nth-child(5){
+            .example:nth-child(5) {
                 display: none;
             }
 
-            .example:nth-child(6){
+            .example:nth-child(6) {
                 display: none;
             }
 
-            .example:nth-child(7){
+            .example:nth-child(7) {
                 display: none;
             }
         }
-        button {
-        
+
+        button {        
             .custom-btn(100px, @sec-btn, @prim-btn);
             border: 2px solid @prim-btn;
 
@@ -298,11 +257,5 @@
                 font-size: 2.4rem;
             }
         }
-
-
     }
-
-
-
-
 }
