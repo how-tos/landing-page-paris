@@ -364,13 +364,13 @@ p {
   padding-bottom: 20px;
 }
 @media (max-width: 500px) {
-  .cards-container .card {
+  .cards-container .card .author {
     width: 90%;
     border-radius: 10px;
   }
 }
 @media (max-width: 500px) {
-  .cards-container {
+  .cards-container .card {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -414,6 +414,13 @@ p {
 .intro-content .intro-img img {
   border-radius: 10px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .intro-content .intro-img {
+    display: content;
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 @media (max-width: 800px) {
   .intro-content .intro-img {

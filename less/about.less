@@ -1,22 +1,19 @@
 
 
 .about-intro {
-
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;   
-        
+    margin-top: 20px;        
 
     .about-intro-header {
         display: flex;
 
-        h1{
+        h1 {
             margin-bottom: 10px;
             padding-bottom:10px;
             border-bottom: 4px solid @main-border-color;
         }
-    }
-    
+    }    
 
     .a-intro {
         display: flex;
@@ -29,6 +26,7 @@
             padding-bottom: 20px;
         }    
     }
+
     .about-img {
         width: 48.7%;
 
@@ -40,8 +38,7 @@
             width: 90%;
             margin: 0 5%;
         }
-    } 
-    
+    }   
 
     p {   
         padding: 20px 0;
@@ -68,16 +65,13 @@
             @media @phone {
                 margin-left: 20px;
             }
-
         }
     }
 
     .about {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        
-        
+        flex-wrap: wrap;   
 
         .person {
             width: 48.5%;
@@ -103,21 +97,16 @@
             
             @media @phone {
                 width: 90%;
-                margin: 0 auto;
-
-                
-            }
-            
-            
+                margin: 0 auto;                
+            }           
         }
 
         @media @phone {
-
             display: flex;
             flex-direction: column;
         }
-        button {
-        
+
+        button {        
             .custom-btn(100px, @sec-btn, @prim-btn);
             border: 2px solid @prim-btn;
 
@@ -127,11 +116,5 @@
                 font-size: 2.4rem;
             }
         }
-
-
     }
-
-
-
-
 }
