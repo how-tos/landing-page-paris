@@ -363,6 +363,14 @@ p {
   letter-spacing: 1px;
   padding-bottom: 20px;
 }
+.cards-container .card .author a {
+  color: #666CFF;
+  font-size: 2rem;
+  padding-left: 10px;
+}
+.cards-container .card .author a:hover {
+  color: #FFAE66;
+}
 @media (max-width: 500px) {
   .cards-container .card .author {
     width: 90%;
