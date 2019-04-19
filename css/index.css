@@ -383,6 +383,11 @@ p {
     border-radius: 10px;
   }
 }
+@media (max-width: 800px) {
+  .cards-container .card {
+    width: 48.5%;
+  }
+}
 @media (max-width: 500px) {
   .cards-container .card {
     display: flex;
