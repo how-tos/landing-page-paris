@@ -5,6 +5,11 @@
   width: 100%;
   margin: 0 auto;    
   margin-top: 20px;   
+
+  @media @phone {
+    flex-direction: column;
+    align-items: center;
+  }
     
   .card {
     display:flex;
@@ -62,7 +67,10 @@
     @media @phone {
       display: flex;
       flex-direction: column;
-      align-content: center;     
+      align-content: center;  
+      width: 90%;   
+      border-radius: 10px;
     }
   }
+  
 }

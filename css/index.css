@@ -330,6 +330,12 @@ p {
   margin: 0 auto;
   margin-top: 20px;
 }
+@media (max-width: 500px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .cards-container .card {
   display: flex;
   flex-direction: column;
@@ -382,6 +388,8 @@ p {
     display: flex;
     flex-direction: column;
     align-content: center;
+    width: 90%;
+    border-radius: 10px;
   }
 }
 .intro-content {
